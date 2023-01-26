@@ -6,3 +6,94 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(39, 180, 133, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+/* Images */
+.header-logo {
+  max-width: 100%;
+  margin: 2rem;
+  height: 3rem;
+}
+
+.hamburger {
+  background-image: url(../img/hamburger.svg);
+  background-color: white;
+  height: 3rem;
+  width: 3rem;
+  margin: 2rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.header-text-container p {
+  letter-spacing: .85rem;
+  font-weight: 700;
+}
+
+.header-text-container button {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #777;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+/* Layout */
+.header-text-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 1rem;
+  color: white;
+  font-size: clamp(1.5rem, 6vw, 2rem);
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
